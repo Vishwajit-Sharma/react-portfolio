@@ -1,0 +1,245 @@
+@media screen and (max-width: 1200px){
+    .top-container{
+        padding-bottom: 70px;
+    }
+    .top-left, .top-right{
+        padding: 70px 8%;
+      }
+      .hello{
+        font-size: 33px;
+        padding-top: 30px;
+      }
+      .typical{
+        font-size: 26px;
+      }
+      .tagline{
+        font-size: 18px;
+      }
+      .btn1{
+        padding: 10px 35px;
+    
+      }
+      .btn2{
+        padding: 10px 35px;
+      }
+      .top-right{
+        padding-top: 40px;
+      }
+      .profile-container{
+        width: 90%;
+        margin-left: 5%;
+        height: 350px;
+      }
+
+}
+
+@media screen and (max-width: 992px){
+    .top-container{
+        padding-bottom: 100px;
+    }
+    .heading-main{
+        font-size: 24px;
+    }
+    .heading-sub{
+        font-size: 14px;
+    }
+    .heading-design{
+        width: 20%;
+        margin: 0 40% 0 40%;
+        bottom: 0px;
+    }
+    .head-icon{
+        font-size: 3rem;
+    }
+    .top-left{
+        padding: 30px 8%;
+      }
+      .top-right{
+        padding-top: 15px;
+      }
+      .hello{
+        font-size: 32px;
+      }
+      .typical{
+        font-size: 16px;
+      }
+      .tagline{
+        font-size: 12px;
+      }
+      .btn1{
+        padding: 7px 15px;
+    
+      }
+      .btn2{
+        padding: 7px 15px;
+      }
+      .profile-container{
+        width: 100%;
+        margin-left: 0%;
+        height: 300px;
+      }
+
+}
+
+@media screen and (max-width: 768px){
+    .top-container{
+        padding-bottom: 70px;
+    }
+    .heading-main{
+        font-size: 20px;
+    }
+    .heading-sub{
+        font-size: 14px;
+    }
+    .heading-design{
+        width: 26%;
+        margin: 0 37% 0 37%;
+        bottom: 5px;
+    }
+    .head-icon{
+        font-size: 2rem;
+    }
+    .nav-container{
+        padding: 0px 5px;
+      }
+      .nav-container ul{
+        gap: 5px;
+      }
+      .nav-container ul li a{
+        padding: 5px;
+      }
+      .nav-icon{
+        font-size: 13px;
+        padding: 0.5rem; 
+      }
+      .nav-text{
+        font-size: 10px;
+      }
+      .top-left{
+        padding: 30px 8%;
+      }
+      .top-right{
+        padding-top: 15px;
+      }
+      .hello{
+        font-size: 32px;
+      }
+      .typical{
+        font-size: 16px;
+      }
+      .tagline{
+        font-size: 12px;
+      }
+      .btn1{
+        padding: 7px 15px;
+        font-size: 12px;
+      }
+      .btn2{
+        padding: 7px 15px;
+        font-size: 12px;
+      }
+      .profile-container{
+        width: 70%;
+        margin-left: 15%;
+        height: 300px;
+      }
+    
+}
+
+@media screen and (max-width: 576px){
+    .heading-main{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .heading-sub{
+        font-size: 11px;
+    }
+    .heading-design{
+        width: 30%;
+        margin: 0 35% 0 35%;
+        bottom: 15px;
+    }
+    .head-icon{
+        font-size: 2rem;
+    }
+    .nav-container{
+        padding: 0px 5px;
+        border-radius: 3rem;
+      }
+      .nav-container ul{
+        gap: 5px;
+      }
+      .nav-container ul li a{
+        padding: 3px 5px;
+      }
+      .nav-icon{
+        font-size: 12px;
+        padding: 0.5rem; 
+      }
+      .nav-text{
+        font-size: 8px;
+      }
+      .top-container{
+        padding-bottom: 70px;
+    }
+    .heading-main{
+        font-size: 20px;
+    }
+    .heading-sub{
+        font-size: 14px;
+    }
+    .heading-design{
+        width: 26%;
+        margin: 0 37% 0 37%;
+        bottom: 5px;
+    }
+    .head-icon{
+        font-size: 2rem;
+    }
+    .nav-container{
+        padding: 0px 5px;
+      }
+      .nav-container ul{
+        gap: 5px;
+      }
+      .nav-container ul li a{
+        padding: 5px;
+      }
+      .nav-icon{
+        font-size: 13px;
+        padding: 0.5rem; 
+      }
+      .nav-text{
+        font-size: 10px;
+      }
+      .top-left{
+        padding: 0px 8%;
+      }
+      .top-right{
+        padding-top: 10px;
+      }
+      .hello{
+        font-size: 20px;
+      }
+      .typical{
+        font-size: 13px;
+      }
+      .tagline{
+        font-size: 9px;
+      }
+      .btn1{
+        padding: 5px 12px;
+        font-size: 10px;
+      }
+      .btn2{
+        padding: 5px 12px;
+        font-size: 10px;
+      }
+      .profile-container{
+        width: 70%;
+        margin-left: 15%;
+        height: 250px;
+      }
+    
+    
+}

@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import './MediaQuery.css';
+import Heading from './components/Heading';
+import Nav from './components/Nav';
+import Top from './components/Top';
+
+
 
 function App() {
+  // const[display, setDisplay] = useState("none")
+
+  // document.addEventListener("scroll", function(){   
+  //   if(document.documentElement.scrollTop>100){
+  //     setDisplay("flex")
+  //   }
+  //   else if(document.documentElement.scrollTop<100){
+  //     setDisplay("none")
+  //   }
+  // })
+
+  // const moveToTop = ()=>{
+  //   document.documentElement.scrollTop = 0
+  //   setDisplay("none")
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Top/>
+      <Heading/>
+      <Nav/>
     </div>
   );
 }
