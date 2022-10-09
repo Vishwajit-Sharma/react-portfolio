@@ -332,6 +332,7 @@ a:hover{
   .resume-div{
     width: 100%;
     padding: 40px 10%;
+    height: 500px;
   }
   .resume-left, .resume-right{
     width: 100%;
@@ -345,10 +346,12 @@ a:hover{
   }
   .resume-icon-div{
     width: max-content;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 15px;
-    padding: 50px 0px;
+    padding: 0px 0px;
     background-color: var(--main);
   }
   .resume-icon{
@@ -373,7 +376,7 @@ a:hover{
     width: 800%;
     visibility: hidden;
   }
-  .education, .work{
+  .education, .work, .project, .interest{
     width: 100%;
     height: 100%;
     padding: 0 5%;
@@ -382,6 +385,7 @@ a:hover{
     flex-direction: column;
     justify-content: center;
   }
+
   .resume-main-points{
     color: var(--dark-orange);
     font-size: 19px;
@@ -401,6 +405,174 @@ a:hover{
     font-size: 17px;
     font-weight: 500;
     padding: 10px 0 10px 35px;
+    margin-bottom: 0;
   }
+  .know-more{
+    color: var(--orange);
+    font-size: 13px;
+  }
+  .know-more:hover{
+    color: var(--dark-orange);
+  }
+
+  .skill{
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tech, .soft{
+    padding: 10px 0px;
+}
+.tech>h3, .soft>h3{
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--main);
+    margin-bottom: 25px;
+}
+.tech:hover>h3, .soft:hover>h3{
+    font-weight: 800;
+    color: black;
+}
+
+.progress-bar-container{
+    margin-bottom: 20px;
+}
+.progress-bar-container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tech:hover .progress-bar-container h2, .soft:hover .progress-bar-container h2 {
+    font-weight: 600;
+}
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    margin-top: 5px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    background-color: white;
+}
+.percentage {
+    display: block;
+    height: 100%;
+    background-color: var(--orange);
+    border-radius: 10px;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+.tech:hover .percentage, .soft:hover .percentage{
+    background-color: var(--dark-orange);
+}
+.t1 {animation-name: t1;}
+
+.t2 {animation-name: t2;}
+
+.t3 {animation-name: t3;}
+
+.t4 {animation-name: t4;}
+
+.t5 {animation-name: t5;}
+
+.t6 {animation-name: t6;}
+
+@keyframes t1{
+    0%{width: 0;}
+    30%{width: 90%;}
+    100%{width: 90%;}
+}
+@keyframes t2{
+    0%{width: 0;}
+    30%{width: 85%;}
+    100%{width: 85%;}
+}
+@keyframes t3{
+    0%{width: 0;}
+    30%{width: 95%;}
+    100%{width: 95%;}
+}
+@keyframes t4{
+    0%{width: 0;}
+    30%{width: 75%;}
+    100%{width: 75%;}
+}
+@keyframes t5{
+    0%{width: 0;}
+    30%{width: 65%;}
+    100%{width: 65%;}
+}
+@keyframes t6{
+    0%{width: 0;}
+    30%{width: 90%;}
+    100%{width: 90%;}
+}
+
+.s1 {animation-name: s1;}
+
+.s2 {animation-name: s2;}
+
+.s3 {animation-name: s3;}
+
+.s4 {animation-name: s4;}
+
+.s5 {animation-name: s5;}
+
+.s6 {animation-name: s6;}
+
+@keyframes s1{
+    0%{width: 0;}
+    30%{width: 90%;}
+    100%{width: 90%;}
+}
+@keyframes s2{
+    0%{width: 0;}
+    30%{width: 85%;}
+    100%{width: 85%;}
+}
+@keyframes s3{
+    0%{width: 0;}
+    30%{width: 80%;}
+    100%{width: 80%;}
+}
+@keyframes s4{
+    0%{width: 0;}
+    30%{width: 90%;}
+    100%{width: 90%;}
+}
+@keyframes s5{
+    0%{width: 0;}
+    30%{width: 85%;}
+    100%{width: 85%;}
+}
+@keyframes s6{
+    0%{width: 0;}
+    30%{width: 75%;}
+    100%{width: 75%;}
+}
+.percent{
+    font-weight: 700;
+    animation: per 3s ease-in infinite;
+}
+@keyframes per{
+    0%{opacity: 0;}
+    30%{opacity: 1;}
+    100%{opacity: 1;}
+}
   
 
