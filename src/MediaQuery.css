@@ -30,6 +30,9 @@
         margin-left: 5%;
         height: 350px;
       }
+      .resume-topic{
+        width: 700%;
+      }
 
 }
 
@@ -102,6 +105,20 @@
       }
       .about-right p:nth-last-child(1){
         width: 70%;
+      }
+
+      .resume-icon-div{
+        gap: 10px;
+        padding: 40px 0px;
+      }
+      .resume-icon{
+        font-size: 17px;
+        padding: 7px 10px;
+      }
+      .resume-topic{
+        font-size: 14px;
+        font-weight: 700;
+        width: 575%;
       }
 
 }
@@ -199,6 +216,20 @@
       }
       .about-right p:nth-last-child(1){
         width: 100%;
+      }
+      .resume-icon-div{
+        gap: 15px;
+        padding: 40px 0px;
+      }
+      .resume-icon{
+        font-size: 17px;
+        padding: 5px 10px;
+      }
+      .resume-topic{
+        font-size: 13px;
+        font-weight: 700;
+        width: 950%;
+        padding: 9px 100%;
       }
     
 }
@@ -322,6 +353,19 @@
       }
       .about-points span{
         font-size: 13px;
+      }
+      .resume-icon-div{
+        gap: 15px;
+        padding: 40px 0px;
+      }
+      .resume-icon{
+        font-size: 15px;
+        padding: 5px 10px;
+      }
+      .resume-topic{
+        font-size: 11px;
+        font-weight: 600;
+        width: 550%;
       }
     
 }
