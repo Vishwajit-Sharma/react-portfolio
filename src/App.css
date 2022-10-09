@@ -272,11 +272,19 @@ a:hover{
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
+    animation-name: pic;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
   }
-  .profile-pic:hover{
+  @keyframes pic{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.07);}
+  }
+  /* .profile-pic:hover{
     transform: scale(1.07);
     transition: 1s ease-out;
-  }
+  } */
   .about-div{
     width: 80%;
     margin: 40px 10%;
@@ -364,8 +372,7 @@ a:hover{
     position: absolute;
     top: 0;
     left: 100%;
-    background-color: var(--main);
-    color: white;
+    color: var(--main);
     padding: 9px 50%;
     letter-spacing: 2px;
     font-size: 16px;
@@ -374,9 +381,18 @@ a:hover{
     border-radius: 0 25px 25px 0;
     white-space: nowrap;
     width: 800%;
-    visibility: hidden;
+    /* visibility: hidden; */
   }
-  .education, .work, .project, .interest{
+  .visible1{
+    background-color: var(--main);
+    color: white;
+    animation: vis 500ms ease-in 1;
+  }
+  @keyframes vis{
+    0%{background:none}
+    100%{background-color: var(--main);}
+  }
+  .education, .work, .interest{
     width: 100%;
     height: 100%;
     padding: 0 5%;
@@ -386,12 +402,14 @@ a:hover{
     justify-content: center;
   }
 
+
   .resume-main-points{
     color: var(--dark-orange);
     font-size: 19px;
     font-weight: 600;
     margin: 0;
     letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif;
   }
   .year{
     background-color: var(--dark-orange);
@@ -410,6 +428,7 @@ a:hover{
   .know-more{
     color: var(--orange);
     font-size: 13px;
+    font-weight: 700;
   }
   .know-more:hover{
     color: var(--dark-orange);
@@ -428,6 +447,7 @@ a:hover{
 
   .tech, .soft{
     padding: 10px 0px;
+   
 }
 .tech>h3, .soft>h3{
     text-align: center;
@@ -438,6 +458,7 @@ a:hover{
     font-weight: 600;
     color: var(--main);
     margin-bottom: 25px;
+    font-family: 'Oswald', sans-serif;
 }
 .tech:hover>h3, .soft:hover>h3{
     font-weight: 800;
@@ -574,5 +595,50 @@ a:hover{
     30%{opacity: 1;}
     100%{opacity: 1;}
 }
+.project{
+  width: 100%;
+  height: 100%;
+  padding: 0 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 12px;
+  row-gap: 20px;
+  place-items: center;
+}
+.project-number{
+  box-shadow: 4px 4px 5px 1px var(--orange);
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-name{
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-orange);
+  margin-bottom: 5px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1.5px;
+
+}
+.project-description{
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.project-number span{
+  font-size: 21px;
+}
+.project-number:hover{
+  background-color: var(--dark-orange);
+  transition: 500ms;
+}
+.project-number:hover .project-name, .project-number:hover .know-more, .project-number:hover span{
+  color: white;
+  transition: 500ms;
+}
+
   
 

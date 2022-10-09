@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div>
       <Heading main = "About Me" sub = "Why Choose Me"/>
-      <div className="row about-div">
+      <div id="about" className="row about-div">
         <div className="col-md-5 col-12 p-0 d-md-flex align-items-md-center">
             <div className="about-left">
                 <img src={about} alt="" />

@@ -22,7 +22,7 @@ export default function Nav() {
                 </a>
             </li>
             <li>
-                <a href="#" onClick={()=>setActive("#about")}>
+                <a href="#about" onClick={()=>setActive("#about")}>
                     <span className={`nav-icon ${active === '#about' ? 'active' : ''}`}><IoPersonAddOutline/></span>
                     <span className={`nav-text about ${active === '#about' ? 'active1' : ''}`}>About Me</span>
                 </a>
@@ -34,7 +34,7 @@ export default function Nav() {
                 </a>
             </li>
             <li>
-                <a href="#" onClick={()=>setActive("#res")}>
+                <a href="#resume" onClick={()=>setActive("#res")}>
                     <span className={`nav-icon ${active === '#res' ? 'active' : ''}`}><IoDocumentAttachOutline/></span>
                     <span className={`nav-text ${active === '#res' ? 'active1' : ''}`}>Resume</span>
                 </a>

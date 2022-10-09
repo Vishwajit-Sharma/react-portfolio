@@ -1,35 +1,63 @@
 import React, { useState } from 'react'
 import Heading from './Heading'
-import { FaUserGraduate, FaHistory } from "react-icons/fa";
-import { GiSkills } from "react-icons/gi";
-import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { FaUserGraduate, FaHistory, FaBookReader, FaGraduationCap, FaUniversity, FaSchool, FaNetworkWired } from "react-icons/fa";
+import { GiSkills, GiOfficeChair } from "react-icons/gi";
+import { AiOutlineFundProjectionScreen, AiOutlineFileUnknown } from "react-icons/ai";
 import { MdOutlineAttractions } from "react-icons/md";
-import { BsFillCircleFill } from "react-icons/bs";
+import { CgMore } from "react-icons/cg";
+import { MdTravelExplore, MdOutlineSportsCricket, MdWorkOutline } from "react-icons/md";
+import { IoIosCodeWorking } from "react-icons/io";
 
 export default function Resume() {
+  const proj = [
+    {
+        name: "ECommerce Website",
+        description: "Fully responsive ECommerce Project using React" 
+    },
+    {
+        name: "ECommerce Website",
+        description: "Fully responsive ECommerce Project using React" 
+    },
+    {
+        name: "ECommerce Website",
+        description: "Fully responsive ECommerce Project using React" 
+    },
+    {
+        name: "ECommerce Website",
+        description: "Fully responsive ECommerce Project using React" 
+    },
+    {
+        name: "ECommerce Website",
+        description: "Fully responsive ECommerce Project using React" 
+    },
+    {
+        name: "ECommerce Website",
+        description: "Fully responsive ECommerce Project using React" 
+    }
+]
   const [vis, setVis] = useState("#")
   return (
     <div>
       <Heading main="Resume" sub="My Formal Bio Details" />
-      <div className="row resume-div">
+      <div id="resume" className="row resume-div">
         <div className="col-md-5 col-12 p-0 h-100 mb-4 mb-md-0">
           <div className="resume-left">
             <div className="resume-icon-div">
-              <span className="resume-icon"><a href="#education" onClick={() => { setVis("#") }}><FaUserGraduate /><span className={`resume-topic ${vis === '#' ? 'visible' : ''}`} >Education</span></a></span>
-              <span className="resume-icon"><a href="#work" onClick={() => { setVis("work") }}><FaHistory /><span className={`resume-topic ${vis === 'work' ? 'visible' : ''}`} >Work History</span></a></span>
-              <span className="resume-icon"><a href="#skill" onClick={() => { setVis("skill") }}><GiSkills /><span className={`resume-topic ${vis === 'skill' ? 'visible' : ''}`} >Skills</span></a></span>
-              <span className="resume-icon"><a href="#project" onClick={() => { setVis("proj") }}><AiOutlineFundProjectionScreen /><span className={`resume-topic ${vis === 'proj' ? 'visible' : ''}`}>Projects</span></a></span>
-              <span className="resume-icon"><a href="#interest" onClick={() => { setVis("int") }}><MdOutlineAttractions /><span className={`resume-topic ${vis === 'int' ? 'visible' : ''}`} >Interests</span></a></span>
+              <span className="resume-icon"><a href="#education" onClick={() => { setVis("#") }}><FaUserGraduate /><span className={`resume-topic ${vis === '#' ? 'visible1' : ''}`} >Education</span></a></span>
+              <span className="resume-icon"><a href="#work" onClick={() => { setVis("work") }}><FaHistory /><span className={`resume-topic ${vis === 'work' ? 'visible1' : ''}`} >Work History</span></a></span>
+              <span className="resume-icon"><a href="#skill" onClick={() => { setVis("skill") }}><GiSkills /><span className={`resume-topic ${vis === 'skill' ? 'visible1' : ''}`} >Skills</span></a></span>
+              <span className="resume-icon"><a href="#project" onClick={() => { setVis("proj") }}><AiOutlineFundProjectionScreen /><span className={`resume-topic ${vis === 'proj' ? 'visible1' : ''}`}>Projects</span></a></span>
+              <span className="resume-icon"><a href="#interest" onClick={() => { setVis("int") }}><MdOutlineAttractions /><span className={`resume-topic ${vis === 'int' ? 'visible1' : ''}`} >Interests</span></a></span>
             </div>
           </div>
         </div>
         <div className="col-md-7 col-12 p-0 h-100 mt-2 mt-md-0">
           <div className="resume-right">
-            <div id='education' className="education bg-primary">
+            <div id='education' className="education">
               <div>
                 <div className='d-flex justify-content-between align-items-center'>
                   <p className="resume-main-points">
-                    <BsFillCircleFill /> &nbsp; Bachelor of Engineering, Pune
+                    <FaGraduationCap/> &nbsp; Bachelor of Engineering, Pune
                   </p>
                   <span className="year">2011-15</span>
                 </div>
@@ -39,7 +67,7 @@ export default function Resume() {
               <div>
                 <div className='d-flex justify-content-between align-items-center'>
                   <p className="resume-main-points">
-                    <BsFillCircleFill /> &nbsp; Higher Secondary Certificate, Jammu
+                    <FaUniversity /> &nbsp; Higher Secondary Certificate, Jammu
                   </p>
                   <span className="year">2010-11</span>
                 </div>
@@ -49,18 +77,18 @@ export default function Resume() {
               <div>
                 <div className='d-flex justify-content-between align-items-center'>
                   <p className="resume-main-points">
-                    <BsFillCircleFill /> &nbsp; Secondary School Certificate, Gwalior
+                    <FaSchool /> &nbsp; Secondary School Certificate, Gwalior
                   </p>
                   <span className="year">2008-09</span>
                 </div>
                 <p className="resume-sub-points">Scored 94% from Border Security Force Sr. Sec. School (CBSE) </p>
               </div>
             </div>
-            <div id='work' className="work bg-success">
+            <div id='work' className="work">
               <div>
                 <div className='d-flex justify-content-between align-items-center'>
                   <p className="resume-main-points">
-                    <BsFillCircleFill /> &nbsp; A2N Academy Pvt. Ltd
+                    <GiOfficeChair /> &nbsp; A2N Academy Pvt. Ltd
                   </p>
                   <span className="year">Apr'22-Oct'22</span>
                 </div>
@@ -70,7 +98,7 @@ export default function Resume() {
               <div>
                 <div className='d-flex justify-content-between align-items-center'>
                   <p className="resume-main-points">
-                    <BsFillCircleFill /> &nbsp; ABC Company Pvt. Ltd
+                    <MdWorkOutline /> &nbsp; ABC Company Pvt. Ltd
                   </p>
                   <span className="year">Oct'20-Apr'22</span>
                 </div>
@@ -80,7 +108,7 @@ export default function Resume() {
               <div>
                 <div className='d-flex justify-content-between align-items-center'>
                   <p className="resume-main-points">
-                    <BsFillCircleFill /> &nbsp; Freelance Work
+                    <IoIosCodeWorking /> &nbsp; Freelance Work
                   </p>
                   <span className="year">Oct'20-Oct'22</span>
                 </div>
@@ -90,7 +118,7 @@ export default function Resume() {
               <div>
                 <div className='d-flex justify-content-between align-items-center'>
                   <p className="resume-main-points">
-                    <BsFillCircleFill /> &nbsp; eBIZ.com Pvt. Ltd.
+                    <FaNetworkWired/> &nbsp; eBIZ.com Pvt. Ltd.
                   </p>
                   <span className="year">2015-2019</span>
                 </div>
@@ -185,6 +213,46 @@ export default function Resume() {
                                 <span class="percentage s6"></span>
                               </div>
                             </div>
+              </div>
+            </div>
+            <div id='project' className="project">
+            {
+                proj.map(({name, description}) =>(
+                <div className="project-number">
+                    <p className="project-name">{name}</p>
+                    <p className="project-description">{description}</p>
+                    <span><CgMore/></span>
+                    <a href="#" className='know-more'>know more <AiOutlineFileUnknown/></a>
+                </div>
+              ))
+            }
+            </div>
+            <div id='interest' className="interest">
+            <div>
+                <div className='d-flex justify-content-between align-items-center'>
+                  <p className="resume-main-points">
+                    <MdTravelExplore /> &nbsp; Traveling 
+                  </p>
+                </div>
+                <p className="resume-sub-points">I am a travel freak. I love exploring new places and have craving for the local food.</p>
+              </div>
+
+              <div>
+                <div className='d-flex justify-content-between align-items-center'>
+                  <p className="resume-main-points">
+                    <FaBookReader /> &nbsp; Reading & Watching Historical Content 
+                  </p>
+                </div>
+                <p className="resume-sub-points">I have fascination towards History. I want to know more and more about our past. Watching content related to our Mythology and History is always on the cards.</p>
+              </div>
+
+              <div>
+                <div className='d-flex justify-content-between align-items-center'>
+                  <p className="resume-main-points">
+                    <MdOutlineSportsCricket /> &nbsp; Cricket
+                  </p>
+                </div>
+                <p className="resume-sub-points">Cricket is something i can always play and talk about. I used to play on grounds during my childhood. But, now whenever i get time, I play on turf and enjoy batting and bowling both.</p>
               </div>
             </div>
           </div>

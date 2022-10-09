@@ -56,6 +56,33 @@
       .know-more{
         font-size: 11px;
       }
+      .tech>h3, .soft>h3{
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }  
+    .progress-bar-container{
+        margin-bottom: 16px;
+    }
+    .progress-bar-container h2 {
+        font-size: 11px;
+    }
+    .progress-bar {
+        height: 8px;
+        margin-top: 5px;
+    }
+    .percent{
+      font-weight: 600;
+  }
+  .project-name{
+    font-size: 14px;
+  }
+  .project-description{
+    font-size: 13px;
+  }
+  .project-number span{
+    font-size: 18px;
+  }
 
 }
 
@@ -160,6 +187,35 @@
       .know-more{
         font-size: 9px;
       }
+      .tech>h3, .soft>h3{
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }  
+    .progress-bar-container{
+        margin-bottom: 18px;
+    }
+    .progress-bar-container h2 {
+        font-size: 8px;
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+    }
+    .progress-bar {
+        height: 6px;
+        margin-top: 7px;
+    }
+    .percent{
+      font-weight: 600;
+  }
+  .project-name{
+    font-size: 14px;
+  }
+  .project-description{
+    font-size: 12px;
+  }
+  .project-number span{
+    font-size: 13px;
+  }
 
 }
 
@@ -294,6 +350,42 @@
       .know-more{
         font-size: 9px;
       }
+      .skill{
+        gap: 25px;
+      }
+      .tech>h3, .soft>h3{
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }  
+    .progress-bar-container{
+        margin-bottom: 20px;
+    }
+    .progress-bar-container h2 {
+        font-size: 9px;
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+    }
+    .progress-bar {
+        height: 7px;
+        margin-top: 8px;
+    }
+    .percent{
+      font-weight: 600;
+  }
+  .project{
+    padding: 0 1%;
+    row-gap: 5px;
+  }
+  .project-number{
+    padding: 5px;
+  }
+  .project-name{
+    font-size: 13px;
+  }
+  .project-number span {
+    font-size: 12px;
+}
     
 }
 
@@ -453,5 +545,42 @@
       .know-more{
         font-size: 7px;
       }
+      .skill{
+        gap: 15px;
+      }
+      .tech>h3, .soft>h3{
+        font-size: 10px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }  
+    .progress-bar-container{
+        margin-bottom: 15px;
+    }
+    .progress-bar-container h2 {
+        font-size: 5px;
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+    }
+    .progress-bar {
+        height: 5px;
+        margin-top: 5px;
+    }
+    .project{
+      row-gap: 5px;
+      column-gap: 5px;
+    }
+    .project-number{
+      padding: 5px;
+    }
+    .project-name{
+      font-size: 9px;
+      letter-spacing: 0.5px;
+    }
+    .project-description{
+      font-size: 8px;
+    }
+    .project-number span{
+      font-size: 10px;
+    }
     
 }
