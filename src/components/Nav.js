@@ -4,6 +4,7 @@ import { IoPersonAddOutline } from "react-icons/io5";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { IoDocumentAttachOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
+import { FaPeopleArrows } from "react-icons/fa";
 
 
 export default function Nav() {
@@ -28,19 +29,19 @@ export default function Nav() {
                 </a>
             </li>
             <li>
-                <a href="#" onClick={()=>setActive("#pf")}>
-                    <span className={`nav-icon ${active === '#pf' ? 'active' : ''}`}><IoBriefcaseOutline/></span>
-                    <span className={`nav-text ${active === '#pf' ? 'active1' : ''}`}>Portfolio</span>
-                </a>
-            </li>
-            <li>
                 <a href="#resume" onClick={()=>setActive("#res")}>
                     <span className={`nav-icon ${active === '#res' ? 'active' : ''}`}><IoDocumentAttachOutline/></span>
                     <span className={`nav-text ${active === '#res' ? 'active1' : ''}`}>Resume</span>
                 </a>
             </li>
             <li>
-                <a href="#" onClick={()=>setActive("#cont")}>
+                <a href="#testimonial" onClick={()=>setActive("#pf")}>
+                    <span className={`nav-icon ${active === '#pf' ? 'active' : ''}`}><FaPeopleArrows/></span>
+                    <span className={`nav-text testi ${active === '#pf' ? 'active1' : ''}`}>Testimonials</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" onClick={()=>setActive("#cont")}>
                     <span className={`nav-icon ${active === '#cont' ? 'active' : ''}`}><IoCallOutline/></span>
                     <span className={`nav-text ${active === '#cont' ? 'active1' : ''}`}>Contact</span>
                 </a>

@@ -83,6 +83,39 @@
   .project-number span{
     font-size: 18px;
   }
+  .testimonial-container{
+    width: 100%;
+    height: 575px;
+    margin-top: 40px;
+  }
+  .carousel-div{
+    width: 80%;
+    top: 17%;
+    left: 10%;
+  }
+  .testimonial-number{
+    padding: 20px;
+    border-radius: 70px 70px 70px 0;
+  }
+  .testimonial{
+    font-size: 16px;
+  }
+  .testimonial span{
+    font-size: 25px;
+    font-weight: 900;
+  }
+  .star{
+    font-size: 17px;
+    font-weight: 800;
+  }
+  .test-name{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  small{
+    font-size: 12px;
+  }
+  
 
 }
 
@@ -216,6 +249,38 @@
   .project-number span{
     font-size: 13px;
   }
+  .testimonial-container{
+    width: 100%;
+    height: 460px;
+    margin-top: 30px;
+  }
+  .carousel-div{
+    width: 86%;
+    top: 15%;
+    left: 7%;
+  }
+  .testimonial-number{
+    padding: 30px 20px;
+    border-radius: 70px 70px 70px 0;
+  }
+  .testimonial{
+    font-size: 14px;
+  }
+  .testimonial span{
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .star{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .test-name{
+    font-size: 13px;
+    font-weight: 700;
+  }
+  small{
+    font-size: 10px;
+  }
 
 }
 
@@ -314,7 +379,10 @@
         width: 100%;
       }
       .resume-div{
-        height: 400px;
+        height: 700px;
+      }
+      .res-col{
+        height: 50%;
       }
       .resume-icon-div{
         gap: 15px;
@@ -385,6 +453,38 @@
   }
   .project-number span {
     font-size: 12px;
+}
+.testimonial-container{
+  width: 100%;
+  height: 440px;
+  margin-top: 30px;
+}
+.carousel-div{
+  width: 80%;
+  top: 15%;
+  left: 10%;
+}
+.testimonial-number{
+  padding: 30px 20px;
+  border-radius: 70px 70px 70px 0;
+}
+.testimonial{
+  font-size: 14px;
+}
+.testimonial span{
+  font-size: 22px;
+  font-weight: 800;
+}
+.star{
+  font-size: 15px;
+  font-weight: 700;
+}
+.test-name{
+  font-size: 13px;
+  font-weight: 700;
+}
+small{
+  font-size: 10px;
 }
     
 }
@@ -510,7 +610,7 @@
         font-size: 13px;
       }
       .resume-div{
-        height: 350px;
+        height: 600px;
       }
       .resume-icon-div{
         gap: 15px;
@@ -582,5 +682,38 @@
     .project-number span{
       font-size: 10px;
     }
+    .testimonial-container{
+      width: 100%;
+      height: 425px;
+      margin-top: 30px;
+    }
+    .carousel-div{
+      width: 80%;
+      top: 15%;
+      left: 10%;
+    }
+    .testimonial-number{
+      padding: 20px;
+      border-radius: 70px 70px 70px 0;
+    }
+    .testimonial{
+      font-size: 12px;
+    }
+    .testimonial span{
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .star{
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .test-name{
+      font-size: 11px;
+      font-weight: 700;
+    }
+    small{
+      font-size: 7px;
+    }
+        
     
 }

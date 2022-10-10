@@ -6,6 +6,8 @@ import Top from './components/Top';
 import MoveToTop from './components/MoveToTop';
 import About from './components/About';
 import Resume from './components/Resume';
+import Testimonial from './components/Testimonial';
+import Contact from './components/Contact';
 
 
 
@@ -33,6 +35,8 @@ function App() {
       <Top/>
       <About/>
       <Resume/>
+      <Testimonial/>
+      <Contact/>
     </div>
   );
 }

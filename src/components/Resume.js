@@ -40,7 +40,7 @@ export default function Resume() {
     <div>
       <Heading main="Resume" sub="My Formal Bio Details" />
       <div id="resume" className="row resume-div">
-        <div className="col-md-5 col-12 p-0 h-100 mb-4 mb-md-0">
+        <div className="col-md-5 col-12 p-0 mb-4 mb-md-0 res-col">
           <div className="resume-left">
             <div className="resume-icon-div">
               <span className="resume-icon"><a href="#education" onClick={() => { setVis("#") }}><FaUserGraduate /><span className={`resume-topic ${vis === '#' ? 'visible1' : ''}`} >Education</span></a></span>
@@ -51,7 +51,7 @@ export default function Resume() {
             </div>
           </div>
         </div>
-        <div className="col-md-7 col-12 p-0 h-100 mt-2 mt-md-0">
+        <div className="col-md-7 col-12 p-0 mt-2 mt-md-0 res-col">
           <div className="resume-right">
             <div id='education' className="education">
               <div>
