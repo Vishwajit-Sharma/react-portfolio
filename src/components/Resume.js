@@ -102,7 +102,7 @@ export default function Resume() {
                   </p>
                   <span className="year">Oct'20-Apr'22</span>
                 </div>
-                <p className="resume-sub-points">Junior Developer <a href="#" className='know-more'> know More...</a> </p>
+                <p className="resume-sub-points">Junior Developer <button className='know-more'> know More...</button> </p>
               </div>
 
               <div>
@@ -112,7 +112,7 @@ export default function Resume() {
                   </p>
                   <span className="year">Oct'20-Oct'22</span>
                 </div>
-                <p className="resume-sub-points">Web Development Projects <a href="#" className='know-more'> know More...</a> </p>
+                <p className="resume-sub-points">Web Development Projects <button className='know-more'> know More...</button> </p>
               </div>
 
               <div>
@@ -122,7 +122,7 @@ export default function Resume() {
                   </p>
                   <span className="year">2015-2019</span>
                 </div>
-                <p className="resume-sub-points">Sales and Marketing Leader <a href="#" className='know-more'> know More...</a> </p>
+                <p className="resume-sub-points">Sales and Marketing Leader <button className='know-more'> know More...</button> </p>
               </div>
             </div>
             <div id='skill' className="skill">
@@ -222,7 +222,7 @@ export default function Resume() {
                     <p className="project-name">{name}</p>
                     <p className="project-description">{description}</p>
                     <span><CgMore/></span>
-                    <a href="#" className='know-more'>know more <AiOutlineFileUnknown/></a>
+                    <button className='know-more'>know more <AiOutlineFileUnknown/></button>
                 </div>
               ))
             }

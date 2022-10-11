@@ -210,7 +210,7 @@ a:hover{
     padding-top: 50px;
   }
   .hello>span{
-    color: var(--orange);
+    color: var(--dark-orange);
   }
   .typical{
     text-align: center;
@@ -435,6 +435,9 @@ a:hover{
     color: var(--orange);
     font-size: 13px;
     font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: inherit;
   }
   .know-more:hover{
     color: var(--dark-orange);
@@ -703,6 +706,108 @@ a:hover{
 }
 small{
   font-size: 13px;
+}
+.contact-div{
+  width: 80%;
+  margin: 40px 10%;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(36,38,59,1);
+}
+.con-left, .con-right{
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.con-img{
+  overflow: hidden;
+}
+.con-img img{
+  width: 100%;
+}
+.con-left:hover .con-img img{
+  transform: scale(1.2,1.2);
+  transition: 0.5s;
+}
+.con-text h3{
+  text-decoration: underline;
+  word-wrap: break-word;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.con-text p{
+  font-size: 17px;
+  font-weight: 400;
+  word-wrap: break-word;
+  font-family: 'Kalam', cursive;
+}
+.con-text p:nth-of-type(2){
+  font-family: monospace;
+}
+.con-text p:nth-of-type(3){
+  font-family: monospace;
+}
+.con-social{
+  width: max-content;
+  display: flex;
+  gap: 15px;
+  color: var(--orange);
+  font-size: 20px;
+}
+.con-social a:hover{
+  color: var(--dark-orange);
+  transform: scale(1.2);
+}
+.mail-img{
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+}
+.mail-img img{
+  width: 100%;
+  height: 100%;
+}
+.btn-send{
+    color: var(--main);
+    width: max-content;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: var(--orange);
+    font-weight: 500;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+.btn-send:hover{
+  color: white;
+  background-color: var(--dark-orange);
+  border: 1px solid var(--orange);
+  transform: scale(1.05);
+  transform: 500ms;
+}
+.con-right span{
+  display: block;
+  text-align: center;
+}
+.input-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+}
+
+.copy{
+  width: 100%;
+  padding: 20px;
+  background-color: var(--main);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
   

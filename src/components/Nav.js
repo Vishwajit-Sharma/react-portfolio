@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { IoHomeOutline } from "react-icons/io5";
 import { IoPersonAddOutline } from "react-icons/io5";
-import { IoBriefcaseOutline } from "react-icons/io5";
 import { IoDocumentAttachOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
 import { FaPeopleArrows } from "react-icons/fa";
@@ -17,7 +16,7 @@ export default function Nav() {
       <div className="nav-container">
         <ul>
             <li>
-                <a href="#" onClick={()=>setActive("#")}>
+                <a href="#home" onClick={()=>setActive("#")}>
                     <span className={`nav-icon ${active === '#' ? 'active' : ''}`}><IoHomeOutline/></span>
                     <span className={`nav-text home ${active === '#' ? 'active1' : ''}`}>Home</span>
                 </a>

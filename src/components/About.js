@@ -3,6 +3,7 @@ import Heading from './Heading'
 import about from '../assets/about.jpe'
 import { AiFillCheckCircle } from "react-icons/ai";
 
+
 export default function About() {
   return (
     <div>
@@ -26,7 +27,7 @@ export default function About() {
                 <p className="about-points mb-md-2 mb-1"><span><AiFillCheckCircle/> </span>Interactive Front End as per the design</p>
                 <p className="about-points mb-md-2 mb-1"><span><AiFillCheckCircle/> </span>Interactive Front End as per the design</p>
                 <p className="about-points mb-md-2 mb-1"><span><AiFillCheckCircle/> </span>Interactive Front End as per the design</p>
-                <p className='d-flex mt-lg-4 mt-md-3 mt-3 justify-content-md-between justify-content-evenly'><a href="#"><button className="btn1">Hire Me</button></a> <a href="#"><button className="btn3">Get Resume</button></a></p>
+                <p className='d-flex mt-lg-4 mt-md-3 mt-3 justify-content-md-between justify-content-evenly'><a href="#contact"><button className="btn1">Contact Me</button></a> <a  href="#"><button className="btn3">Get Resume</button></a></p>
             </div>
         </div>
       </div>

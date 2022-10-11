@@ -115,6 +115,14 @@
   small{
     font-size: 12px;
   }
+  .con-text h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.con-text p{
+    font-size: 15px;
+    font-weight: 500;
+}
   
 
 }
@@ -281,6 +289,30 @@
   small{
     font-size: 10px;
   }
+  .con-text h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+.con-text p{
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+.mail-img{
+  width: 100%;
+  height: 75px;
+  margin-bottom: 10px;
+}
+.btn-send{
+  padding: 7px 15px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.copy{
+  padding: 15px;
+  font-size: 14px;
+}
+
 
 }
 
@@ -485,6 +517,41 @@
 }
 small{
   font-size: 10px;
+}
+.con-left:hover .con-img img{
+  transform: scale(1.1,1.1);
+}
+
+.con-text h3{
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+}
+.con-text p{
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+.con-social{
+  width: 100%;
+  justify-content: center;
+}
+.con-right{
+  padding-top: 30px;
+}
+.mail-img{
+  width: 100%;
+  height: 225px;
+  margin-bottom: 15px;
+}
+.btn-send{
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.copy{
+  padding: 12px;
+  font-size: 12px;
 }
     
 }
@@ -714,6 +781,45 @@ small{
     small{
       font-size: 7px;
     }
-        
+    .con-left:hover .con-img img{
+      transform: scale(1.2,1.2);
+  }
+  .con-text h3{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .con-text p{
+    font-size: 11px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .con-social{
+    width: 100%;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .con-right{
+    padding-top: 20px;
+  }
+  .mail-img{
+    width: 100%;
+    height: 125px;
+    margin-bottom: 10px;
+  }
+  .btn-send{
+    padding: 7px 15px;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .input-div{
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .copy{
+    padding: 10px;
+    font-size: 10px;
+  } 
     
 }
