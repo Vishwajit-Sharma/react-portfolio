@@ -202,7 +202,7 @@
         gap: 10px;
         padding: 40px 0px;
       }
-      .resume-icon{
+      .resume-icon button{
         font-size: 17px;
         padding: 7px 10px;
       }
@@ -420,7 +420,7 @@
         gap: 15px;
         padding: 40px 0px;
       }
-      .resume-icon{
+      .resume-icon button{
         font-size: 17px;
         padding: 5px 10px;
       }
@@ -683,7 +683,7 @@ small{
         gap: 15px;
         padding: 40px 0px;
       }
-      .resume-icon{
+      .resume-icon button{
         font-size: 15px;
         padding: 5px 10px;
       }

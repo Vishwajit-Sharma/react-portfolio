@@ -46,17 +46,19 @@ export default function Resume() {
         <div className="col-md-5 col-12 p-0 mb-4 mb-md-0 res-col">
           <div className="resume-left">
             <div className="resume-icon-div">
-              <span className="resume-icon"><a href="#education" onClick={() => { setVis("#") }}><FaUserGraduate /><span className={`resume-topic ${vis === '#' ? 'visible1' : ''}`} >Education</span></a></span>
-              <span className="resume-icon"><a href="#work" onClick={() => { setVis("work") }}><FaHistory /><span className={`resume-topic ${vis === 'work' ? 'visible1' : ''}`} >Work History</span></a></span>
-              <span className="resume-icon"><a href="#skill" onClick={() => { setVis("skill") }}><GiSkills /><span className={`resume-topic ${vis === 'skill' ? 'visible1' : ''}`} >Skills</span></a></span>
-              <span className="resume-icon"><a href="#project" onClick={() => { setVis("proj") }}><AiOutlineFundProjectionScreen /><span className={`resume-topic ${vis === 'proj' ? 'visible1' : ''}`}>Projects</span></a></span>
-              <span className="resume-icon"><a href="#interest" onClick={() => { setVis("int") }}><MdOutlineAttractions /><span className={`resume-topic ${vis === 'int' ? 'visible1' : ''}`} >Interests</span></a></span>
+              <span className="resume-icon"><button  onClick={() => { setVis("#") }}><FaUserGraduate /><span className={`resume-topic ${vis === '#' ? 'visible1' : ''}`} >Education</span></button></span>
+              <span className="resume-icon"><button  onClick={() => { setVis("work") }}><FaHistory /><span className={`resume-topic ${vis === 'work' ? 'visible1' : ''}`} >Work History</span></button></span>
+              <span className="resume-icon"><button  onClick={() => { setVis("skill") }}><GiSkills /><span className={`resume-topic ${vis === 'skill' ? 'visible1' : ''}`} >Skills</span></button></span>
+              <span className="resume-icon"><button  onClick={() => { setVis("proj") }}><AiOutlineFundProjectionScreen /><span className={`resume-topic ${vis === 'proj' ? 'visible1' : ''}`}>Projects</span></button></span>
+              <span className="resume-icon"><button  onClick={() => { setVis("int") }}><MdOutlineAttractions /><span className={`resume-topic ${vis === 'int' ? 'visible1' : ''}`} >Interests</span></button></span>
             </div>
           </div>
         </div>
         <div className="col-md-7 col-12 p-0 mt-2 mt-md-0 res-col">
           <div className="resume-right">
-            <div id='education' className="education">
+            {
+              vis==="#" ? 
+              <div id='education' className="education d-flex">
               <div>
                 <div className='d-flex justify-content-between align-items-center'>
                   <p className="resume-main-points">
@@ -86,8 +88,11 @@ export default function Resume() {
                 </div>
                 <p className="resume-sub-points">Scored 94% from Border Security Force Sr. Sec. School (CBSE) </p>
               </div>
-            </div>
-            <div id='work' className="work">
+              </div>
+              : ""
+            }
+            { vis==="work" ?
+            <div id='work' className="work d-flex">
               <div>
                 <div className='d-flex justify-content-between align-items-center'>
                   <p className="resume-main-points">
@@ -127,8 +132,10 @@ export default function Resume() {
                 </div>
                 <p className="resume-sub-points">Sales and Marketing Leader <button className='know-more' onClick={()=>{setOpenModel(true)}}> know More...</button> </p>
               </div>
-            </div>
-            <div id='skill' className="skill">
+            </div>: ""
+            } 
+            { vis==="skill"? 
+            <div id='skill' className="skill d-grid">
               <div class="tech">
                             <h3 class="">Hard Skills</h3>
                             <div class="progress-bar-container">
@@ -217,8 +224,10 @@ export default function Resume() {
                               </div>
                             </div>
               </div>
-            </div>
-            <div id='project' className="project">
+            </div>:""
+            }
+            { vis==="proj" ?
+            <div id='project' className="project d-grid">
             {
                 proj.map(({name, description}) =>(
                 <div className="project-number">
@@ -229,8 +238,10 @@ export default function Resume() {
                 </div>
               ))
             }
-            </div>
-            <div id='interest' className="interest">
+            </div>:""
+            }
+            { vis==="int"?
+            <div id='interest' className="interest d-flex">
             <div>
                 <div className='d-flex justify-content-between align-items-center'>
                   <p className="resume-main-points">
@@ -257,7 +268,8 @@ export default function Resume() {
                 </div>
                 <p className="resume-sub-points">Cricket is something i can always play and talk about. I used to play on grounds during my childhood. But, now whenever i get time, I play on turf and enjoy batting and bowling both.</p>
               </div>
-            </div>
+            </div>:""
+            }
           </div>
         </div>
       </div>

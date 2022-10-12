@@ -20,6 +20,11 @@ html{
     box-sizing: border-box;
     margin: 0;
 }
+button{
+  outline: none;
+  border: none;
+  background: none;
+}
 .row{
     margin: 0;
 }
@@ -353,8 +358,8 @@ a:hover{
   .resume-left, .resume-right{
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    scroll-behavior: smooth;
+    /* overflow: hidden;
+    scroll-behavior: smooth; */
   }
 
   .resume-left{
@@ -370,7 +375,7 @@ a:hover{
     padding: 0px 0px;
     background-color: var(--main);
   }
-  .resume-icon{
+  .resume-icon button{
     color: white;
     font-size: 19px;
     padding: 7px 10px;
@@ -404,11 +409,24 @@ a:hover{
     width: 100%;
     height: 100%;
     padding: 0 5%;
-    display: flex;
     gap: 15px;
     flex-direction: column;
     justify-content: center;
+    display: none;
+    /* animation: disp 1s ease-in-out 1; */
   }
+ /* .display-resume{
+  display: flex; */
+  /* animation: disp 1s ease-in-out 1; */
+  /* animation-name: disp;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1; */
+ /* } */
+ /* @keyframes disp{
+  0%{display:none;}
+  100%{display: flex;}
+ } */
 
 
   .resume-main-points{
@@ -454,6 +472,7 @@ a:hover{
     gap: 20px;
     align-items: center;
     justify-content: center;
+    display: none;
   }
 
   .tech, .soft{
@@ -615,6 +634,7 @@ a:hover{
   column-gap: 12px;
   row-gap: 20px;
   place-items: center;
+  display: none;
 }
 .project-number{
   box-shadow: 4px 4px 5px 1px var(--orange);

@@ -29,7 +29,7 @@ export default function Nav() {
                 </Link>
             </li>
             <li>
-                <Link to="resume" smooth={true} offset={-150} duration={500} onClick={()=>setActive("#res")}>
+                <Link to="resume" smooth={true} offset={-100} duration={500} onClick={()=>setActive("#res")}>
                     <span className={`nav-icon ${active === '#res' ? 'active' : ''}`}><IoDocumentAttachOutline/></span>
                     <span className={`nav-text ${active === '#res' ? 'active1' : ''}`}>Resume</span>
                 </Link>
