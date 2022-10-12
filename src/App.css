@@ -141,6 +141,7 @@ a:hover{
     padding: 0.5rem;
     border-radius: 50%;
     color: var(--dark-orange); 
+    cursor: pointer;
   }
   .nav-text{
     display: flex;
@@ -153,6 +154,7 @@ a:hover{
     top: 70%;
     transform: translateY(-50%);
     opacity: 0;
+    cursor: pointer;
   }
   .nav-text.home{
     left: 20%;

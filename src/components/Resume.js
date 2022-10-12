@@ -7,8 +7,11 @@ import { MdOutlineAttractions } from "react-icons/md";
 import { CgMore } from "react-icons/cg";
 import { MdTravelExplore, MdOutlineSportsCricket, MdWorkOutline } from "react-icons/md";
 import { IoIosCodeWorking } from "react-icons/io";
+import ModalCompany from './ModalCompany';
+import { Link} from 'react-scroll'
 
 export default function Resume() {
+  const [openModel, setOpenModel] = useState(false)
   const proj = [
     {
         name: "ECommerce Website",
@@ -92,7 +95,7 @@ export default function Resume() {
                   </p>
                   <span className="year">Apr'22-Oct'22</span>
                 </div>
-                <p className="resume-sub-points">Internship in React Js <a href="#" className='know-more'> know More...</a> </p>
+                <p className="resume-sub-points">Internship in React Js <button className='know-more' onClick={()=>{setOpenModel(true)}}> know More...</button> </p>
               </div>
 
               <div>
@@ -102,7 +105,7 @@ export default function Resume() {
                   </p>
                   <span className="year">Oct'20-Apr'22</span>
                 </div>
-                <p className="resume-sub-points">Junior Developer <button className='know-more'> know More...</button> </p>
+                <p className="resume-sub-points">Junior Developer <button className='know-more' onClick={()=>{setOpenModel(true)}}> know More...</button> </p>
               </div>
 
               <div>
@@ -112,7 +115,7 @@ export default function Resume() {
                   </p>
                   <span className="year">Oct'20-Oct'22</span>
                 </div>
-                <p className="resume-sub-points">Web Development Projects <button className='know-more'> know More...</button> </p>
+                <p className="resume-sub-points">Web Development Projects <button className='know-more' onClick={()=>{setOpenModel(true)}}> know More...</button> </p>
               </div>
 
               <div>
@@ -122,7 +125,7 @@ export default function Resume() {
                   </p>
                   <span className="year">2015-2019</span>
                 </div>
-                <p className="resume-sub-points">Sales and Marketing Leader <button className='know-more'> know More...</button> </p>
+                <p className="resume-sub-points">Sales and Marketing Leader <button className='know-more' onClick={()=>{setOpenModel(true)}}> know More...</button> </p>
               </div>
             </div>
             <div id='skill' className="skill">
@@ -258,6 +261,7 @@ export default function Resume() {
           </div>
         </div>
       </div>
+      <ModalCompany openModel={openModel} setOpenModel={setOpenModel}/>
     </div>
   )
 }
