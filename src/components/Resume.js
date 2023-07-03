@@ -110,7 +110,7 @@ export default function Resume() {
                   </p>
                   <span className="year">Oct'20-Apr'22</span>
                 </div>
-                <p className="resume-sub-points">Junior Developer <button className='know-more' onClick={()=>{setOpenModel(true)}}> know More...</button> </p>
+                <p className="resume-sub-points">Senior Developer <button className='know-more' onClick={()=>{setOpenModel(true)}}> know More...</button> </p>
               </div>
 
               <div>
@@ -126,11 +126,11 @@ export default function Resume() {
               <div>
                 <div className='d-flex justify-content-between align-items-center'>
                   <p className="resume-main-points">
-                    <FaNetworkWired/> &nbsp; eBIZ.com Pvt. Ltd.
+                    <FaNetworkWired/> &nbsp; ABC.com Pvt Ltd.
                   </p>
                   <span className="year">2015-2019</span>
                 </div>
-                <p className="resume-sub-points">Sales and Marketing Leader <button className='know-more' onClick={()=>{setOpenModel(true)}}> know More...</button> </p>
+                <p className="resume-sub-points">Software Engineer <button className='know-more' onClick={()=>{setOpenModel(true)}}> know More...</button> </p>
               </div>
             </div>: ""
             } 
